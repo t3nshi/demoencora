@@ -1,4 +1,13 @@
-# Demoencora2
+# Demoencora
+
+- Create an angular project
+- Upload your project to a git repository it should be  public allowing me to pull down your code
+- Crate a home component, it should allow only authenticated users
+- The home component should list the data in a user friendly way https://jsonplaceholder.typicode.com/posts
+- Create a login component with email and password inputs
+- If user goes to the home page without login redirect to login page
+- after login redirect to the home page
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
 
