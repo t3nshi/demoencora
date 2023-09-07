@@ -1,5 +1,7 @@
 # Demoencora
 
+## Instructions for the challenge
+
 - Create an angular project
 - Upload your project to a git repository it should be  public allowing me to pull down your code
 - Crate a home component, it should allow only authenticated users
@@ -8,6 +10,16 @@
 - If user goes to the home page without login redirect to login page
 - after login redirect to the home page
 
+
+## Notes
+I took a video of the making of. If you are interested please let me know as I tried to upload it to my youtube and it seems to be too long.
+
+Any requests or corrections can be made to me@t3nshi.com
+
+Thanks for reading!
+
+
+## About the Angular Version and all that stuff
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
 
