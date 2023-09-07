@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import  { Router } from '@angular/router';
 import { CoreService } from '../services/core.service';
 
 interface Post {
@@ -16,7 +17,8 @@ interface Post {
 export class HomeComponent implements OnInit {
 
   posts: Post[] = [];
-  constructor(private core:CoreService){}
+  constructor(private core:CoreService,
+              private router:Router){}
   ngOnInit(){
     this.core.getData().subscribe(
       res => {
@@ -28,6 +30,15 @@ export class HomeComponent implements OnInit {
       }
     );
   }
+
+logout(){
+  const sure = confirm('Are you sure you want to log out?');
+  if(sure){
+
+    this.router.navigate(['login']);
+
+  }
+}
 
 
 }

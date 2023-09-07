@@ -1,1 +1,23 @@
-<p>home works!</p>
+<header>
+
+  <!-- Jumbotron -->
+  <div class="p-5 text-center bg-light">
+    <h1 class="mb-3">Posts</h1>
+    <h4 class="mb-3">updated list</h4>
+    <a class="btn btn-primary" (click)="logout()" role="button">Log out</a>
+  </div>
+  <!-- Jumbotron -->
+</header>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col" *ngFor="let post of posts">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">{{ post.title }}</h5>
+        <p class="card-text">
+          {{ post.body }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
