@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit {
 logout(){
   const sure = confirm('Are you sure you want to log out?');
   if(sure){
-
+    localStorage.removeItem('token');
     this.router.navigate(['login']);
 
   }
